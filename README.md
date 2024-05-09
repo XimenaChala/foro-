@@ -9,6 +9,4 @@
 * Las relaciones entre paquetes se muestran mediante flechas. En este caso, las flechas indican que los paquetes Clientes, Ventas y Pedidos están relacionados entre sí, y que los paquetes Pedidos, Preparación e Inventario también están relacionados entre sí.
 
 
-## 
-> Ver
-![Modelo relacional del ejercicio](image.png))
+
