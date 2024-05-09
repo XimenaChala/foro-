@@ -1,0 +1,46 @@
+@startuml Cafeterías
+
+
+package Cafetería {
+ 
+  package Pedidos {
+    interface ITomaPedido
+    class Pedido
+    class ItemPedido
+  }
+
+  
+  package Preparación {
+    interface IPreparadorBebidas
+    interface IPreparadorComidas
+    class Bebida
+    class Comida
+  }
+
+  
+  package Inventario {
+    class Ingrediente
+    class Producto
+  }
+
+  
+  package Clientes {
+    class Cliente
+    class TarjetaCliente
+  }
+
+  
+  package Ventas {
+    class Venta
+    class FormaPago
+  }
+}
+
+
+Clientes -> Pedidos
+Pedidos -> Preparación
+Preparación -> Inventario
+Ventas -> Pedidos
+Ventas -> Clientes
+
+@enduml
